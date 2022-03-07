@@ -1,0 +1,14 @@
+#%% Define a function that counts vowels
+def vowel_counter(string):
+    vowel_count=0
+    # casefold has been used to ignore cases
+    string = string.casefold()
+    for character in string:
+        if character in "aeiou":
+           vowel_count += 1
+    return vowel_count
+
+
+#%% Insert a string then put it into a function defined above
+mystring = 'Count the vowel!'
+vowel_counter(mystring)
